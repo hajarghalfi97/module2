@@ -1,0 +1,154 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+.background-1 {
+    background: #68B0AB;
+}
+
+.background-2 {
+    background: #8FC0A9;
+}
+
+.background-3 {
+    background: #C8D5B9;
+}
+
+.background-4 {
+    background: #FAF3DD;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.h-80 {
+    height: 80px;
+}
+
+.h-400 {
+    height: 400px;
+}
+
+.w-80 {
+    width: 80px;
+}
+
+
+/* 2.1 add a css rule for the flex-container class and set it to use a flexbox display model */
+
+.flex-container {
+
+display: flex;
+
+
+
+/* 6.1 add a flex-direction properly to the flex-contair class and observe the behaviour */
+
+
+flex-direction: column;
+flex-direction: row;
+
+}
+
+
+/* 2.2 add rules for the flex-items 1, 2, 3, 4 classes and set flex to them accordingly */
+
+.flex-item-1 {
+
+    flex: 1;
+}
+.flex-item-2 {
+    flex: 2;
+}
+.flex-item-3{
+    flex: 3;
+}
+.flex-item-4 {
+
+    flex:4 ;
+}
+/* 3.1 add css rule for the flex-center class and set values for justify content */
+
+.flex-center{
+    /* 3.2 try out different values for both of the above css properties, center items within container v + h */
+justify-content: center;
+align-items: center;
+
+}
+/* 4.1 add css rule for the flex-space between class and experiment with different values */
+
+.flex-space-between {
+
+justify-content: space-evenly;
+justify-content: center;
+
+/* 4.2 set appropiate value for  justify-content to push the element to the left and right sides with leftover space */
+
+justify-content: space-between;
+
+}
+
+/* 5.1 add rules for the flex-basis-item-50 and flex-wrap classes so that the container has flex items have flex basis set to 50% */
+.flex-wrap { 
+    flex-wrap:wrap;
+
+/* 5.2 observe what happens when changin the value for the flex-wrap to wrap-reserve */
+
+flex-wrap:wrap-reverse;
+
+}
+.flex-basis-item-50 {
+    flex-basis:50%;
+
+    /* 5.3 choose a new value for flex-basis that makes all 4 flex items fit on one line */
+
+flex-basis: 25%;
+
+}
+
+/* 7.1 add css for the flex-menu class and its children */
+
+.flex-menu{
+
+
+    list-style:none;
+    margin: 0;
+    padding: 0;
+
+
+
+
+    /* 7.2 use the justify-content properly to align the menu items to the right */
+
+    justify-content: flex-end;
+
+/* 7.3 use the justify-content properly to align the menu items to the center row */
+
+justify-content: center;
+
+}
+/* 7.4 use the order properly to move the fAQ menu item to the last */
+
+.flex-menu .fourth-item{
+
+    order:2;
+
+}
+.flex-menu li{
+
+padding: 1em;
+
+margin: 0 1 px;
+
+/* 7.5 use the flex-grow properly to divide the total space evenely between each menu item */
+
+flex-grow: 1;
+text-align: center;
+}
